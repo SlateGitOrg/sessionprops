@@ -35,7 +35,7 @@ flowchart LR
 
 ## Quick start
 
-Requires Node 22.18 or newer (type stripping is enabled by default from 22.18; CI uses Node 24). There is nothing to install.
+Requires Node 22.6 or newer (type stripping is enabled by default from 22.18; CI uses Node 24). There is nothing to install.
 
 ```bash
 git clone https://github.com/SlateGitOrg/sessionprops.git

@@ -1,7 +1,7 @@
 {
   "name": "sessionprops",
   "version": "0.1.0",
-  "description": "Session security as invariants, checked by property-based testing that generates the attack sequence nobody thought of.",
+  "description": "Session security as invariants, checked by property-based testing that generates the operation sequences that break them.",
   "type": "module",
   "private": true,
   "engines": { "node": ">=22.6" },

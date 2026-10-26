@@ -33,7 +33,7 @@ const hardened = search(HARDENED, { runs: 300, length: 40, seed: 7 });
 console.log('\n  Against a hardened server: ' +
             `${hardened ? 'VIOLATION FOUND' : '300 traces, 12,000 operations, ' +
             'no violations'}`);
-console.log('  (a suite that cannot report a clean run is not a suite)\n');
+console.log('');
 
 const FLAWS: Flaw[] = [
   'NO_ROTATION_ON_ELEVATION', 'LOGOUT_CLIENT_SIDE_ONLY',
@@ -62,4 +62,4 @@ console.log(`    ${rot.violation.message}`);
 console.log(`\n    found in a ${rot.violation.trace.length}-step random trace, ` +
             `shrunk to ${rot.minimal.length} steps:\n`);
 rot.minimal.forEach((op, i) => console.log(`      ${i + 1}. ${show(op)}`));
-console.log('\n  That shrink is the difference between a curiosity and a ticket.\n');
+console.log('');

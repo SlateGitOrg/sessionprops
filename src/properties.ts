@@ -11,8 +11,8 @@ import { AuthServer, type Flaw, type ServerConfig } from './server.ts';
  *
  * So the properties are stated as things that must hold FOR ALL sequences, and
  * a stateful model generates those sequences. When one breaks, the counter-
- * example is SHRUNK to a minimal reproduction - because a 200-step trace is a
- * curiosity and a 4-step trace is a bug report somebody fixes this afternoon.
+ * example is SHRUNK to a minimal reproduction, because a short trace is
+ * easier to diagnose than a long one.
  */
 
 export type Op =

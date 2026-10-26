@@ -51,7 +51,7 @@ describe('shrinking produces a usable bug report', () => {
     assert.ok(found!.minimal.length < found!.violation.trace.length,
       'shrinking did not reduce the trace');
     assert.ok(found!.minimal.length <= 8,
-      `minimal trace is ${found!.minimal.length} steps; a developer needs ~4`);
+      `minimal trace is ${found!.minimal.length} steps; expected at most 8`);
   });
 
   test('the shrunk trace still reproduces the violation', () => {
