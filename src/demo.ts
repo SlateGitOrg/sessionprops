@@ -1,5 +1,6 @@
 /**
- * The 60-second artefact: a shrunk reproduction. Run: `npm run demo`
+ * Demo: detection results per seeded flaw and one shrunk reproduction.
+ * Run: `npm run demo`
  */
 import { HARDENED, type Flaw } from './server.ts';
 import { search, type Op } from './properties.ts';

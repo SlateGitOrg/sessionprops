@@ -3,8 +3,6 @@ import { AuthServer, type Flaw, type ServerConfig } from './server.ts';
 /**
  * Session security as INVARIANTS, checked by generated operation sequences.
  *
- * THE DIFFERENTIATOR LIVES HERE.
- *
  * An example-based auth test checks that login works, then logout works, in
  * that order, once. Session bugs do not live there. They live in the sequence
  * nobody wrote down: elevate, then replay the pre-elevation identifier; change
